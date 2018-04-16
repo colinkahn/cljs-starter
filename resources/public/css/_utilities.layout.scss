@@ -1,0 +1,33 @@
+///*----------------------------------*\
+//  #LAYOUT
+//\*----------------------------------*/
+
+@import 'basscss-sass/scss/layout';
+@import 'basscss-sass/scss/align';
+@import 'basscss-sass/scss/grid';
+@import 'basscss-sass/scss/flexbox';
+@import 'basscss-sass/scss/position';
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.shrink-1 {
+  flex-shrink: 1;
+}
+
+.pin {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

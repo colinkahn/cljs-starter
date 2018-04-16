@@ -1,0 +1,14 @@
+///*----------------------------------*\
+//  #TYPOGRAPHY
+//\*----------------------------------*/
+
+@import 'basscss-sass/scss/type-scale';
+@import 'basscss-sass/scss/typography';
+
+.ff {
+  font-family: $font-family;
+}
+
+.text-center {
+  text-align: center;
+}

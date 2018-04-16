@@ -1,0 +1,24 @@
+{:http-server-root "public"
+ :server-port 3449
+ :open-file-command "emacsclient"
+ :css-dirs ["resources/public/css"]
+ :builds [{:id :dev, 
+           :source-paths ["src"],
+           :figwheel {:on-jsload "app.core/mount-root"}
+           :compiler
+           {:main app.core,
+            :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true}
+            :preloads [day8.re-frame-10x.preload]
+            :asset-path "js/out",
+            :output-to "resources/public/js/main.js",
+            :output-dir "resources/public/js/out",
+            :source-map-timestamp true}}
+          {:id :devcards, 
+           :source-paths ["src"],
+           :figwheel {:devcards true}
+           :compiler
+           {:main app.devcards,
+            :asset-path "js/devcards_out",
+            :output-to "resources/public/js/devcards.js",
+            :output-dir "resources/public/js/devcards_out",
+            :source-map-timestamp true}}]}

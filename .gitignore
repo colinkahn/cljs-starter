@@ -1,0 +1,7 @@
+node_modules
+resources/public/js
+resources/public/styleguide
+resources/public/css/style.css
+.cpcache
+.nrepl-port
+figwheel_server.log

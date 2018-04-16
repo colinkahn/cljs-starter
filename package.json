@@ -1,0 +1,38 @@
+{
+  "name": "reify-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "watch": {
+    "build-styleguide": {
+      "patterns": [
+        "resources/public/css"
+      ],
+      "extensions": "scss"
+    },
+    "build-scss": {
+      "patterns": [
+        "resources/public/css"
+      ],
+      "extensions": "scss"
+    }
+  },
+  "scripts": {
+    "kss": "kss",
+    "build-scss": "node-sass --include-path ./node_modules resources/public/css/style.scss resources/public/css/style.css",
+    "build-styleguide": "kss resources/public/css resources/public/styleguide --css ../css/style.css --css https://fonts.googleapis.com/css?family=Roboto --css https://fonts.googleapis.com/icon?family=Material+Icons",
+    "watch-scss": "npm-watch build-scss",
+    "watch-styleguide": "npm-watch build-styleguide",
+    "watch": "run-p watch-scss watch-styleguide",
+    "server": "node server.js",
+    "start": "run-p watch server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "basscss-sass": "^4.0.0",
+    "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.2",
+    "npm-watch": "^0.3.0"
+  }
+}

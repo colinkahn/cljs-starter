@@ -1,0 +1,49 @@
+///*----------------------------------*\
+//  #COLORS
+//\*----------------------------------*/
+
+.primary {
+  color: $app-primary-color;
+}
+
+.muted {
+  color: $app-muted-color;
+}
+
+.muted-reversed {
+  color: $app-muted-reversed-color;
+}
+
+.neutral {
+  color: $app-neutral-color;
+}
+
+.reversed {
+  color: $app-reversed-color;
+}
+
+.active {
+  color: $app-active-color;
+}
+
+.achievment {
+  color: $app-achievement-color;
+}
+
+.error,
+.declined {
+  color: $app-declined-color;
+}
+
+.success,
+.confirmed {
+  color: $app-confirmed-color;
+}
+
+.reversed-disabled {
+  color: rgba($app-reversed-color, .15);
+}
+
+.demark {
+  border-color: $app-border-color;
+}
